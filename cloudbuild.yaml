@@ -14,6 +14,6 @@ steps:
   args: ['run', 'build']
 # [END cloudbuild_npm_node]
 options:
-  logging: CLOUD_LOGGING_ONLY
   pool:
     name: 'projects/lpgprj-sbo-n-brdexp-gl-01/locations/us-east1/workerPools/privatepool2'
+  logging: CLOUD_LOGGING_ONLY
