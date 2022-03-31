@@ -16,7 +16,7 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/cloudbuildsampleapp', '.' ]
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'push', '-t', 'gcr.io/$PROJECT_ID/cloudbuildsampleapp', '.' ]
+  args: [ 'push', 'gcr.io/$PROJECT_ID/cloudbuildsampleapp', '.' ]
 images: ['gcr.io/$PROJECT_ID/cloudbuildsampleapp']
 options:
   pool:
