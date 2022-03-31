@@ -14,10 +14,10 @@ steps:
   args: ['run', 'build']
 # [END cloudbuild_npm_node]
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', 'gcr.io/PROJECT_ID/cloudbuild_sampleapp', '.' ]
+  args: [ 'build', '-t', 'gcr.io/PROJECT_ID/cloudbuild-sampleapp', '.' ]
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'push', '-t', 'gcr.io/PROJECT_ID/cloudbuild_sampleapp', '.' ]
-images: ['gcr.io/$PROJECT_ID/cloudbuild_sampleapp']
+  args: [ 'push', '-t', 'gcr.io/PROJECT_ID/cloudbuild-sampleapp', '.' ]
+images: ['gcr.io/$PROJECT_ID/cloudbuild-sampleapp']
 options:
   pool:
     name: 'projects/$PROJECT_ID/locations/us-east1/workerPools/privatepool2'
