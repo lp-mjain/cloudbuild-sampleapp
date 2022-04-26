@@ -24,7 +24,8 @@ steps:
     - --filename=./config
     - --image=gcr.io/lpgprj-sbo-n-brdexp-gl-01/cloudbuildsampleapp:latest
     - --location=us-east1
-    - --cluster=lpgprj-sbo-n-gkectl-gl-01
+    - --project=lpgprj-sbo-n-gkectl-gl-01
+    - --cluster=lpgkcl-n-appctl-usea1-01
 options:
   pool:
     name: 'projects/$PROJECT_ID/locations/us-east1/workerPools/privatepool2'
